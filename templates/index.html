@@ -17,15 +17,29 @@
   <meta name="geo.placename" content="Temora">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/blog/css/blog.css">
   <link rel="alternate" type="application/rss+xml" title="Luxe Shutters Blog" href="/blog/rss.xml">
-
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
 <body>
+  <!-- Sticky Call Bar -->
+  <div class="call-bar">
+    <div class="call-bar-inner">
+      <div class="call-bar-left">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.36 1.75.7 2.58a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.83.34 1.7.57 2.58.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:1800465893">1800-465-893</a>
+        <span class="tagline">— Premium Shutters, Blinds &amp; Curtains</span>
+      </div>
+      <div class="call-bar-right">
+        <span class="serving">Serving Regional NSW</span>
+        <a href="tel:1800465893" class="btn-accent">Call Now</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="blog-header">
     <div class="header-inner">
@@ -33,27 +47,28 @@
         <span class="logo-name">Luxe Shutters</span>
         <span class="logo-tagline">Shutters &middot; Blinds &middot; Curtains</span>
       </a>
-      <nav class="header-nav" aria-label="Main navigation">
+      <nav class="header-nav" id="nav" aria-label="Main navigation">
         <a href="https://luxeshutters.com.au/">Home</a>
         <a href="https://luxeshutters.com.au/services">Services</a>
         <a href="https://luxeshutters.com.au/gallery">Gallery</a>
         <a href="/blog/" class="active">Blog</a>
+        <a href="https://luxeshutters.com.au/#about">About</a>
         <a href="https://luxeshutters.com.au/contact">Contact</a>
       </nav>
       <div class="header-actions">
         <a href="tel:1800465893" class="phone-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          1800 465 893
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.36 1.75.7 2.58a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.83.34 1.7.57 2.58.7A2 2 0 0 1 22 16.92z"/></svg>
+          1800-465-893
         </a>
         <a href="https://luxeshutters.com.au/contact" class="btn-primary">Get a Free Quote</a>
       </div>
-      <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.header-nav').classList.toggle('open')">
+      <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </header>
 
-  <!-- Blog Index Hero -->
+  <!-- Blog Hero -->
   <section class="blog-hero">
     <div class="container">
       <h1>Window Furnishing Guides for Riverina Homes</h1>
@@ -76,24 +91,52 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <span class="logo-name">Luxe Shutters</span>
-          <p>Premium shutters, blinds, curtains, zipscreens, and awnings in Temora and the Riverina, NSW.</p>
+          <p>Where style meets everyday comfort. Premium shutters, blinds, curtains, and outdoor screens — professionally installed across the Temora &amp; Riverina region.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/Luxeshutters" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/luxe_shutters" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
           <a href="https://luxeshutters.com.au/services">Services</a>
-          <a href="https://luxeshutters.com.au/gallery">Gallery</a>
           <a href="/blog/">Blog</a>
           <a href="https://luxeshutters.com.au/contact">Contact</a>
         </div>
-        <div class="footer-contact">
-          <h4>Get in Touch</h4>
-          <a href="tel:1800465893">1800 465 893</a>
-          <a href="mailto:admin@luxeshutters.com.au">admin@luxeshutters.com.au</a>
-          <p>Temora, NSW 2666</p>
+        <div>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Temora, NSW 2666</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.36 1.75.7 2.58a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.83.34 1.7.57 2.58.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:1800465893">1800-465-893</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:admin@luxeshutters.com.au">admin@luxeshutters.com.au</a>
+          </div>
+        </div>
+        <div>
+          <h4>Hours &amp; Service Area</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <div>Mon - Fri: 9am - 5pm</div>
+              <div>Sat: By appointment</div>
+              <div>Sun: Closed</div>
+            </div>
+          </div>
+          <p class="footer-service-note">Serving Temora, Wagga Wagga, Young, West Wyalong, Cootamundra, and surrounding areas across regional NSW.</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; {{YEAR}} Luxe Shutters. All rights reserved.</p>
+        <p>&copy; {{YEAR}} Luxe Shutters. All rights reserved. Licensed and Insured.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
