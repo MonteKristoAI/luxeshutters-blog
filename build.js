@@ -336,7 +336,27 @@ function main() {
   buildRss(posts);
   copyAssets();
 
+  // Ping search engines with sitemap
+  pingSitemap();
+
   console.log(`\n✅ Build complete: ${posts.length} post(s) → dist/\n`);
+}
+
+// ============================================================
+// Ping search engines with sitemap URL
+// ============================================================
+
+function pingSitemap() {
+  const sitemapUrl = `${SITE_URL}${BLOG_PATH}/sitemap.xml`;
+  const https = require('https');
+
+  const pingUrl = (url) => {
+    https.get(url, () => {}).on('error', () => {});
+  };
+
+  pingUrl(`https://www.google.com/ping?sitemap=${encodeURIComponent(sitemapUrl)}`);
+  pingUrl(`https://www.bing.com/ping?sitemap=${encodeURIComponent(sitemapUrl)}`);
+  console.log('  PING: sitemap submitted to Google + Bing');
 }
 
 main();
