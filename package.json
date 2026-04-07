@@ -1,0 +1,15 @@
+{
+  "name": "luxeshutters-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LuxeShutters blog - static HTML served via Cloudflare Workers proxy at luxeshutters.com.au/blog/",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve dist -l 3001",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0",
+    "serve": "^14.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+# Cloudflare Worker config for blog reverse proxy
+# Deploy with: npx wrangler deploy
+name = "luxeshutters-blog-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Route: only /blog/* on the main domain
+# Set this in Cloudflare dashboard > Workers Routes:
+# luxeshutters.com.au/blog/* → luxeshutters-blog-proxy
