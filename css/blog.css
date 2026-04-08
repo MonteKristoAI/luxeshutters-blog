@@ -79,7 +79,7 @@ body {
 .logo { text-decoration: none; display: flex; align-items: center; gap: 0.625rem; }
 .logo-img { height: 36px; width: auto; }
 .logo-text { display: flex; flex-direction: column; }
-.logo-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: var(--text); line-height: 1.2; }
+.logo-name { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.25rem; color: var(--text); line-height: 1.2; }
 .logo-tagline { font-size: 0.625rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted-fg); display: none; }
 @media (min-width: 640px) { .logo-tagline { display: block; } }
 
@@ -227,14 +227,14 @@ body {
 @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
 
-.footer-brand .logo-name { color: #fff; font-size: 1.25rem; display: block; margin-bottom: 1rem; font-family: var(--font-heading); font-weight: 700; }
+.footer-brand .logo-name { color: #fff; font-size: 1.25rem; display: block; margin-bottom: 1rem; font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
 .footer-brand p { font-size: 0.875rem; color: hsl(210 20% 97% / 0.6); line-height: 1.6; margin-bottom: 1.5rem; }
 .footer-social { display: flex; gap: 0.75rem; }
 .footer-social a { width: 36px; height: 36px; border-radius: 50%; background: hsl(210 20% 97% / 0.1); display: flex; align-items: center; justify-content: center; transition: background 0.2s; color: var(--primary-fg); text-decoration: none; }
 .footer-social a:hover { background: hsl(210 65% 42% / 0.3); }
 .footer-social svg { width: 16px; height: 16px; }
 
-.blog-footer h4 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 1rem; }
+.blog-footer h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 1rem; }
 .footer-links a { display: block; color: hsl(210 20% 97% / 0.6); text-decoration: none; font-size: 0.875rem; margin-bottom: 0.625rem; transition: color 0.2s; }
 .footer-links a:hover { color: var(--primary-fg); }
 .footer-contact-item { display: flex; align-items: flex-start; gap: 0.625rem; font-size: 0.875rem; color: hsl(210 20% 97% / 0.6); margin-bottom: 0.75rem; }
